@@ -9,6 +9,10 @@ demo:  Demo.o DummyChoosers.o DummyGuessers.o play.o calculate.o SmartGuesser.o
 test:  Test.o DummyChoosers.o DummyGuessers.o play.o calculate.o SmartGuesser.o 
 	clang++-5.0 -std=c++17 $^ -o test
 
+OurTest:  OurTest.o DummyChoosers.o DummyGuessers.o play.o calculate.o SmartGuesser.o 
+	clang++-5.0 -std=c++17 $^ -o OurTest
+
+
 %.o: %.cpp
 	clang++-5.0 -std=c++17 --compile $< -o $@
 
