@@ -1,5 +1,5 @@
 #include "Guesser.hpp"
-#include "calculate.cpp"
+#include "calculate.hpp"
 #include <string>
 using std::string;
 namespace bullpgia{

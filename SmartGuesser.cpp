@@ -1,6 +1,6 @@
 
 #include "SmartGuesser.hpp"
-#include "calculate.cpp"
+#include "calculate.hpp"
 #include <string>
 using std::string;
 
