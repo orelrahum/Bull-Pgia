@@ -8,39 +8,28 @@
 namespace bullpgia{
 
   string calculateBullAndPgia(string choice, string guess){
-
-	//if any of the strings are empty, the game cannot be played
 	if( choice == "" || guess == "" ) throw std::invalid_argument( "The string is empty" );
 		
 	int bull = 0;
 	int pgiot = 0;
 		
-	//for the string selected by chooser
-	for( int i = 0; i < choice.length(); i++ ){
-		int runnerInt = choice[i];
+	for( int i = 0; i < choice.length(); i++ ){  //loop for the chooser
+	  int chooser = choice[i];
 			
+	   for( int j = 0; j < guess.length(); j++ ){  //loop for the guesser
+		int guesser = guess[j];
+					
+		if( chooser == guesser){
+		   if( i == j ){     //if the guesser guessed the right number at the right place
+		      bulls++; }
+		   else{   pgiot++;  } //if the answer contains the number guessed but not at the right place
+			               }
+						    }
+						  }
 		
-		for( int j = 0; j < guess.length(); j++ ){
-			int guessInt = guess[j];
-				
-				
-			if( runnerInt == guessInt){
-				if( i == j ){ //position match
-					bulls++;
-				}
-				else{ //contains relation
-					pgiot++;
-				}
-			}
-		}
+	string bull_str = to_string(bulls);
+        string pgiot_str = to_string(pgiot);
+        string result = bull_str + "," + pgiot_str;
+        return result;
 	}
-		
-	string b = to_string(bulls);
-        string c = to_string(pgiot);
-        string s = b + "," + c;
-        return s;
-
-	}
-
-
 }
