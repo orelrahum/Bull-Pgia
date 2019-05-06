@@ -21,14 +21,14 @@ namespace bullpgia{
 					
 		if( chooser == guesser){
 		   if( i == j ){     //if the guesser guessed the right number at the right place
-		      bulls++; }
+		      bull++; }
 		   else{   pgiot++;  } //if the answer contains the number guessed but not at the right place
 			               }
 						    }
 						  }
 		
-	string bull_str = to_string(bulls);
-        string pgiot_str = to_string(pgiot);
+	string bull_str = std::to_string(bull);
+        string pgiot_str = std::to_string(pgiot);
         string result = bull_str + "," + pgiot_str;
         return result;
 	}
