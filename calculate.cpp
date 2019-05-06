@@ -4,6 +4,7 @@
 #include <iostream>
 #include <math.h>
 #include "calculate.hpp"
+using namespace std;
 
 namespace bullpgia{
 
