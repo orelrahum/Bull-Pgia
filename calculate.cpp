@@ -57,3 +57,4 @@ namespace bullpgia{
   return to_string(bull) + "," + to_string(pgia);
 	
 }
+}
