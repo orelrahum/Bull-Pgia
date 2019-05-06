@@ -8,6 +8,7 @@ namespace bullpgia{
 
   string calculateBullAndPgia(string choice, string guess){
 	if( choice == "" || guess == "" ) throw std::invalid_argument( "The string is empty" );
+  int i=0;
 	int bull = 0;
 	int pgiot = 0;
 	int arrguess [10]= {0};
