@@ -3,7 +3,7 @@
 #include <iostream>
 #include <math.h>
 #include "calculate.hpp"
-// used with by Bar Genish and Lioz Elmalem algoritem Idia
+// used with by Bar Genish and Lioz Elmalem algoritem Idia 
 namespace bullpgia{
 
   string calculateBullAndPgia(string choice, string guess){
