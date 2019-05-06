@@ -12,7 +12,7 @@ namespace bullpgia{
 	int pgiot = 0;
 	int arrguess [10]= {0};
 	int arrcohice [10]= {0};
-  for(i=0;i<choice.length();i++){
+  for(int i=0;i<choice.length();i++){
     if(choice[i]==guess[i])
       bull++;
   }
