@@ -34,7 +34,7 @@ namespace bullpgia{
         string pgiot_str = std::to_string(pgiot);
         string result = bull_str + "," + pgiot_str;
         return result;
-}
+
 
 	// 	for (int i=0)
 	// for( int i = 0; i < choice.length(); i++ ){  //loop for the chooser
