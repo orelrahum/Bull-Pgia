@@ -23,11 +23,11 @@ namespace bullpgia{
   }
 	  for(i=0;i<choice.length();i++){
     int temp=(choice[i])-'0';
-    arrchoice[temp]++;
+    arrcohice[temp]++;
   }
 
   for (i=0;i<10;i++){
-    pgiot=pgiot+min(arrchoice[i],arrguess[i]);
+    pgiot=pgiot+min(arrcohice[i],arrguess[i]);
   }
   pgiot=pgiot-bull;
  	string bull_str = std::to_string(bull);
