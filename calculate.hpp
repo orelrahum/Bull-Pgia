@@ -12,5 +12,5 @@ namespace bullpgia
 // int getNumSimilarChars(string chosen, string guess);
 // int* getCharCounts(string str);
 
-}
+};
 
